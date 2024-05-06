@@ -1,7 +1,5 @@
-import './Subtitulo.css';
-
 function Subtitulo({ subtitulo }) {
-  return <h2 class="allMayus">{subtitulo}</h2>;
+  return <p>{subtitulo}</p>;
 }
 
 export default Subtitulo;
