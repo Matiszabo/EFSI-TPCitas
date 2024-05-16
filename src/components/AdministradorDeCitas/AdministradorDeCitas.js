@@ -6,15 +6,15 @@ function AdministradorDeCitas({ citas, setCitas }) {
     <div className="administradorDeCitas">
       <Subtitulo subtitulo={"Administra tus citas"}></Subtitulo>
       <div className="cards">
-        {citas.map((c, i) => (
+        {Array.isArray(citas) && citas.map((cita, index) => (
           <Card
-            key={i}
-            mascota={c.nombremascota}
-            dueno={c.nombredueno}
-            fecha={c.fecha}
-            hora={c.hora}
-            sintomas={c.sintomas}
-            id={i}
+            key={index}
+            mascota={cita.nombremascota}
+            dueno={cita.nombredueno}
+            fecha={cita.fecha}
+            hora={cita.hora}
+            sintomas={cita.sintomas}
+            id={index}
             setCitas={setCitas}
             citas={citas}
           />

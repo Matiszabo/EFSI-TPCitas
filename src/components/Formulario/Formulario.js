@@ -1,7 +1,7 @@
 import Boton from '../Boton/Boton';
 import './Formulario.css';
 
-function Formulario({ citas, setCita }) {
+function Formulario({ citas, setCitas }) {
 
   const crearCita = (e) => {
     e.preventDefault();
@@ -12,7 +12,12 @@ function Formulario({ citas, setCita }) {
       hora: e.target.hora.value,
       sintomas: e.target.sintomas.value
     };
-    setCita([...citas, nuevaCita]);
+
+    // Mostrar un mensaje de confirmación antes de agregar la cita
+    const confirmar = window.confirm("¿Estás seguro de que deseas agregar esta cita?");
+    if (confirmar) {
+      setCitas([...citas, nuevaCita]);
+    }
   }
 
   return (

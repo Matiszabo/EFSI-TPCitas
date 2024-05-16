@@ -2,11 +2,14 @@ import '../Boton/Boton.css';
 import './Card.css';
 
 function Card({ mascota, dueno, fecha, hora, sintomas, id, setCitas, citas }) {
-
+  
   const eliminar = () => {
-    const nuevasCitas = [...citas];
-    nuevasCitas.splice(id, 1);
-    setCitas(nuevasCitas);
+    const confirmar = window.confirm("¿Estás seguro de que deseas eliminar esta cita?");
+    if (confirmar) {
+      const nuevasCitas = citas.slice();
+      nuevasCitas.splice(id, 1);
+      setCitas(nuevasCitas);
+    }
   };
 
   return (
@@ -19,7 +22,7 @@ function Card({ mascota, dueno, fecha, hora, sintomas, id, setCitas, citas }) {
         <li><b>Sintomas:</b> {sintomas}</li>
         <input type="hidden" value={id} name="index" />
       </ul>
-      <button onClick={eliminar} className="allMayus eliminar">Eliminar X</button>
+      <button onClick={eliminar} className="eliminar">ELIMINAR</button>
     </div>
   );
 }
