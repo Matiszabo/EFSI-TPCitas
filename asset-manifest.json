@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/EFSI-TP03.git/static/css/main.e6662ef0.css",
-    "main.js": "/EFSI-TP03.git/static/js/main.bf3dd2a4.js",
-    "static/js/453.66590ca0.chunk.js": "/EFSI-TP03.git/static/js/453.66590ca0.chunk.js",
-    "index.html": "/EFSI-TP03.git/index.html",
-    "main.e6662ef0.css.map": "/EFSI-TP03.git/static/css/main.e6662ef0.css.map",
-    "main.bf3dd2a4.js.map": "/EFSI-TP03.git/static/js/main.bf3dd2a4.js.map",
-    "453.66590ca0.chunk.js.map": "/EFSI-TP03.git/static/js/453.66590ca0.chunk.js.map"
+    "main.css": "/EFSI-TPCitas/static/css/main.35994235.css",
+    "main.js": "/EFSI-TPCitas/static/js/main.5b464689.js",
+    "static/js/453.5262d70c.chunk.js": "/EFSI-TPCitas/static/js/453.5262d70c.chunk.js",
+    "index.html": "/EFSI-TPCitas/index.html",
+    "main.35994235.css.map": "/EFSI-TPCitas/static/css/main.35994235.css.map",
+    "main.5b464689.js.map": "/EFSI-TPCitas/static/js/main.5b464689.js.map",
+    "453.5262d70c.chunk.js.map": "/EFSI-TPCitas/static/js/453.5262d70c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6662ef0.css",
-    "static/js/main.bf3dd2a4.js"
+    "static/css/main.35994235.css",
+    "static/js/main.5b464689.js"
   ]
 }
